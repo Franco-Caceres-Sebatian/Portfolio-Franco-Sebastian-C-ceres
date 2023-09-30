@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-portfolio {
+    padding: 20px;
+    
+}
+
+.portafolio {
+    font-size: 60px;
+    font-family: 'Lora', serif;
+    color: white;
+
+}
+
+.parrafo-portfolio {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: auto;
+    max-width: 500px;
+}
+.div-git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github{
+    background-color: #0492A8;
+    border-radius: 8px;
+    border: 0px;
+    padding: 10px 20px;
+    margin: 20px;
+    color: white;
+}
+.rym{
+    height: auto;
+    width: auto;
+    max-height: 600px;
+    max-width: 400px;
+}
+.div-porselec{
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 20px;
+}
+.div-selector{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #ACB3CD;
+
+}
+.selectores{
+    color: black;
+}

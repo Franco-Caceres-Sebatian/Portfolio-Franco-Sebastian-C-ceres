@@ -1,0 +1,22 @@
+body{
+  background-color: #080E30;
+}
+html{
+scroll-behavior: smooth;
+}
+header {
+    
+  
+  /* background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  
+  
+}
+section[id] {
+  scroll-margin-top: 100px;
+}
