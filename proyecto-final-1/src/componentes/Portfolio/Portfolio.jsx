@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Portfolio/Portfolio.css'
-import imagenesrym from '../../assets/paginarym.jpg'
+import imagenesrym from '../../assets/rym proyecto.jpg'
 
 
 const Portfolio = () => {
