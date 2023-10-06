@@ -19,7 +19,7 @@ const Homes = () => {
                     </div>
                 </div>
                 <div className='div-parrafo'>
-                    <p>
+                    <p className='parrafo-h'>
                         Mi nombre es Franco y soy desarrollador web hace un año. Me a enamorado el mundo de la programacion desde mi primer contacto con este en la escuela secundaria, cuando di mis primeros pasos trabajando con programas de aprendizaje como Pseint y Visual Basic.
                         Tuve muchos trabajos, desde chofer, atencion al publico y albañil, hasta que decidi dar un giro a mi vida y dedicarme a lo que realmente me apasiona. Actualmente estoy certificado como desarrollador Front end y mi proximo objetivo sera ser Full Stack.
                     </p>

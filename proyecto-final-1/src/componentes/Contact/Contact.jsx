@@ -32,8 +32,9 @@ const Contact = () => {
         <div className='div-principal-contact'>
             <div className='div-contact'>
                 <h2 className='contacto'>Contactarme</h2>
+                <div>
                 <p className='parrafo'>Si desea contactarse, cuenta con los siguientes opciones de contacto. Su consulta no molesta.</p>
-
+                </div>
                 <div className='div-iconos'>
 
                     <div className='div-ip'>
