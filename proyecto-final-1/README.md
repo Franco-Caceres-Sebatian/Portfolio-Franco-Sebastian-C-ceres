@@ -1,8 +1,22 @@
-# React + Vite
+!Portfolio Franco Sebatian Caceres¡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta inpirado en este diseño:
+https://www.behance.net/gallery/178381487/Personal-Portfolio-Website-Design
+es un portfolio destinado a un diseñador grafico, lo que hice fue modificarlo con mis datos y adaptarlo a un desarrollador front end.
+Cambios:
 
-Currently, two official plugins are available:
+Navbar: Contaba con una seccion de diseños, la cual vi inecesaria para mi rubro.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Home:en la parte de premios la cambie por la cantidad de lenguajes del cual tengo algo de conociiento.
+
+portfolio: en lugar del botton mastrar mas, coloque uno con un link directo a mi GitHub.
+
+about: coloque los lenguajes y bibliotecas que manejo.
+
+contact: agregue mis redes sociales.
+
+
+
+
+
+
