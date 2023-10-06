@@ -96,12 +96,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 30%;
+        margin-left: 0%;
 
     }
 
     .div-lenguajes {
         display: flex;
         flex-wrap: wrap;
+    }
+
+
+}
+
+@media(max-width: 550px) {
+    .conteiner-principal-about {
+        max-width: 100%;
+       padding: 50px;
+       padding-right: 100px;
+    }
+    ..p-sobre {
+        font-size: 10px;
+    }
+    .sobre {
+        
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .div-lenguajes {
+        display: flex;
+        flex-direction: column;
     }
 }

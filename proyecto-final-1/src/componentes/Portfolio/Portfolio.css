@@ -67,7 +67,7 @@
 
 .div-selector {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #ACB3CD;
 
@@ -77,26 +77,35 @@
     font-size: 18px;
     color: black;
 }
-.selectores:hover{
+
+.selectores:hover {
     background-color: #0492A8;
 }
-.selectores::after{
+
+.selectores::after {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 5px solid transparent; /* Tamaño de la flecha */
-    border-right: 5px solid transparent; /* Tamaño de la flecha */
-    border-top: 10px solid #ff0000; /* Color de la flecha */
-    bottom: -12px; /* Ajusta la posición vertical de la flecha */
-    left: 50%; /* Centra la flecha horizontalmente */
+    border-left: 5px solid transparent;
+    /* Tamaño de la flecha */
+    border-right: 5px solid transparent;
+    /* Tamaño de la flecha */
+    border-top: 10px solid #ff0000;
+    /* Color de la flecha */
+    bottom: -12px;
+    /* Ajusta la posición vertical de la flecha */
+    left: 50%;
+    /* Centra la flecha horizontalmente */
     transform: translateX(-50%);
-    opacity: 0; /* La flecha está inicialmente oculta */
+    opacity: 0;
+    /* La flecha está inicialmente oculta */
     transition: opacity 0.3s ease;
 }
 
 .selectores:hover::after {
-    opacity: 1; /* La flecha se hace visible al hacer hover */
+    opacity: 1;
+    /* La flecha se hace visible al hacer hover */
 }
 
 .div-carrusel {
@@ -111,8 +120,8 @@
 .cert {
     height: auto;
     width: auto;
-    max-height: 700px;
-    max-width: 440px;
+    max-height: 600px;
+    max-width: 400px;
 }
 
 
@@ -124,21 +133,30 @@
 }
 
 @media(max-width: 860px) {
-    .div-porselec{
+    .div-porselec {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
-    .div-carrusel{
+
+    .div-carrusel {
         display: flex;
         flex-direction: column;
     }
-    #certificado{
 
+
+}
+
+@media(max-width: 550px) {
+    .cert {
+        max-height: 500px;
+        max-width: 300px;
     }
-    #pagina{
 
+    .rym {
+        max-height: 500px;
+        max-width: 300px;
     }
 }

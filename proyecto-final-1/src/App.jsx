@@ -16,7 +16,7 @@ function App() {
         <div className='div-navbar'>
           
           <Navbar />
-          
+         
         </div>
 
       </header>

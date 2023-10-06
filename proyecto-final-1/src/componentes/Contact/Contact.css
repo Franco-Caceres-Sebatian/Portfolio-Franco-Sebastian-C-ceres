@@ -104,8 +104,18 @@ input {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     border: 0;
+    background-size: 0% 2px;
+    transition: background-size 1000ms ease-in-out;
 }
 
+.buton-submit:hover {
+
+    background-image: linear-gradient(90deg, #61AEFE, #6a88f5, #3d63ee);
+    background-size: 100% 2px;
+    box-shadow: 0 0 10px #0492A8, 0 0 20px #0492A8, 0 0 20px #0492A8;
+
+
+}
 #form {
     display: flex;
     flex-wrap: wrap;
