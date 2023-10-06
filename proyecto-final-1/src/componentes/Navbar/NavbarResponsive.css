@@ -1,0 +1,11 @@
+
+
+@media(max-whidth: 880px) {
+    .burger-button{
+        display:flex
+    }
+
+    .nav-conteiner{
+        display: none;
+    }
+}

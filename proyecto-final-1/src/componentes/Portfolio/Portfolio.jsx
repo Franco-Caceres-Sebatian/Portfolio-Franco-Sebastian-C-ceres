@@ -1,6 +1,14 @@
 import React from 'react';
 import '../Portfolio/Portfolio.css'
-import imagenesrym from '../../assets/rym proyecto.jpg'
+import imagenesrym from '../../assets/rymjpg.jpg'
+import certific from '../../assets/certificado-nuevo.jpg'
+import pdfcer from '../../../public/Franco Caceres corregido.pdf'
+
+
+const seleccion1 = document.getElementById('certificado')
+
+
+
 
 
 const Portfolio = () => {
@@ -12,6 +20,8 @@ const Portfolio = () => {
                     <p className='parrafo-portfolio'>Aquí se encuentra todos mis trabajos, los pueden apreciarlos y espero que sea de su total agrado.</p>
                 </div>
                 <div className='div-selector'>
+                    <a href="" className='selectores'>Todo</a>
+
                     <a href="" className='selectores'>Mis proyectos</a>
 
                     <a href="" className='selectores'>Certificaciones</a>
@@ -19,10 +29,12 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className='div-carrusel'>
-                <div>
-                    <a href=""><img src="" alt="" /></a>
+                <div id='certificado'>
+                    <a href={pdfcer} target='blank'>
+                        <img className='cert' src={certific} alt="certificacion Frond end" />
+                    </a>
                 </div>
-                <div>
+                <div id='pagina'>
                     <a href="https://franco-sebastian-caceres-proyectofinal-rickandmorty.vercel.app/" target='blank'>
                         <img className='rym' src={imagenesrym} alt="imagen rym" />
                     </a>

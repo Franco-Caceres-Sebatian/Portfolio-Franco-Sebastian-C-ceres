@@ -1,4 +1,4 @@
-:root{
+:root {
     --azulpagina: #080E30;
 
 
@@ -10,17 +10,23 @@
     box-sizing: border-box;
 }
 
-.navbar-conteiner{
+.navbar-conteiner {
     background-color: var(--azulpagina);
     padding: 60px 10px 20px 10px;
     display: flex;
     justify-content: flex-end;
-   align-items:center;
-  
+    align-items: center;
+
 }
 
-.descarga{
-    
+.nav-conteiner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.descarga {
+
     background-color: #0492A8;
     color: white;
     border-radius: 12px;
@@ -32,27 +38,27 @@
     border: 0;
     position: relative;
     cursor: pointer;
-    
+
     background-size: 0% 2px;
     transition: background-size 1000ms ease-in-out;
-    
+
 }
 
-.descarga::before{
+.descarga::before {
     content: 'Descargar C.V';
 }
 
-.descarga:hover{
-    
-    background-image:linear-gradient(90deg, #61AEFE, #6a88f5,#3d63ee);
+.descarga:hover {
+
+    background-image: linear-gradient(90deg, #61AEFE, #6a88f5, #3d63ee);
     background-size: 100% 2px;
     box-shadow: 0 0 10px #0492A8, 0 0 20px #0492A8, 0 0 20px #0492A8;
-   
+
 
 }
 
 
-a{
+a {
     text-decoration: none;
     padding: 22px;
     color: white;
@@ -60,12 +66,12 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
-#al{
-    background-image: linear-gradient(90deg, #61AEFE, #ACB3CD,#181E34);
+#al {
+    background-image: linear-gradient(90deg, #61AEFE, #ACB3CD, #181E34);
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -75,7 +81,107 @@ li{
     transition: background-size 600ms ease-in-out;
 }
 
-#al:hover{
+#al:hover {
     background-size: 100% 2px;
+
+}
+
+
+
+
+
+
+
+/*--------- hamburguesa---------------     */
+
+.nav-icon-5 {
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+
+    display: none;
+}
+
+.nav-icon-5 span {
+    background-color: #f9f9fa;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width: 100%;
+    height: 4px;
+    transition-duration: 500ms
+}
+
+.nav-icon-5 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+
+.nav-icon-5 span:nth-child(2) {
+    top: 13px;
+    left: 0px;
+    opacity: 1;
+}
+
+.nav-icon-5 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+    transform: rotate(-3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+    transform: rotate(3deg) scaleY(1.1);
+}
+
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+    transform: rotate(-4deg) scaleY(1.1);
+}
+
+.nav-icon-5.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+}
+
+.nav-icon-5.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-icon-5.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
+
+
+@media(max-width: 880px) {
+
+    .nav-conteiner {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        height: -webkit-fill-available;
+        transform: translateX(-100%);
+        transition: 0, 3s ease all;
+    }
+
+    .nav-conteiner.open {
+        transform: translateX(0) !important;
+    }
+
+    .nav-icon-5 {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px
+    }
+
 
 }

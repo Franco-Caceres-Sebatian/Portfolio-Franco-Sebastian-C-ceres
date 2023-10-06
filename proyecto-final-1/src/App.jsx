@@ -4,6 +4,7 @@ import { Homes } from './componentes/Homes/Homes'
 import { About } from "./componentes/about/About";
 import { Portfolio } from "./componentes/Portfolio/Portfolio";
 import { Contact } from "./componentes/Contact/Contact";
+
 import './App.css'
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     <>
       <header id='principal' className='conteiner-principal'>
         <div className='div-navbar'>
+          
           <Navbar />
+          
         </div>
 
       </header>

@@ -65,15 +65,16 @@ input {
 #mensaje {
     outline: none;
     border-radius: 8px;
-    
-    height: 230px;
-    width: 733px;
+    height: auto;
+    width: auto;
+    max-width: 230px;
+    max-width: 733px;
     padding: 60px;
     background: transparent;
     font-family: 'Roboto', sans-serif;
     resize: none;
     margin-top: 20px;
-    
+
 }
 
 .div-imput {
@@ -105,26 +106,26 @@ input {
     border: 0;
 }
 
-#form{
+#form {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 
-#button{
+#button {
     margin-right: 600px;
 }
 
-svg{
+svg {
     height: auto;
     width: auto;
     min-height: 20px;
     min-width: 20px;
-    color:white
+    color: white
 }
 
-.div-img{
+.div-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,29 +136,52 @@ svg{
     width: auto;
     min-height: 40px;
     min-width: 40px;
-    
-    
+
+
 }
 
-.div-iconos{
+.div-iconos {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 20px;
     margin: 20px;
 }
-.div-ip{
+
+.div-ip {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin-top: 20px;
 }
-.div-letra{
+
+.div-letra {
     padding-left: 20px;
 }
-.p-1{
+
+.p-1 {
     font-size: 10px;
-    color:#7A7C7D
+    color: #7A7C7D
+}
+
+@media(max-width: 880px) {
+    .div-principal-contact {
+        flex-direction: column;
+    }
+
+    .div-iconos {
+        flex-wrap: wrap;
+    }
+
+    .div-imput {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .div-form {
+        width: 100%;
+    }
 }

@@ -17,6 +17,11 @@ header {
   
   
 }
+
 section[id] {
   scroll-margin-top: 100px;
+}
+
+.div-navbar{
+  height: auto;
 }
